@@ -1,3 +1,6 @@
+## Documento completo
+https://docs.google.com/document/d/1N8bkbuJEQjbfmxXFpf_RCgp5XOl87PMMan_ajuEqetY/edit?usp=sharing
+
 ## Passo a passo instalação
  
 
