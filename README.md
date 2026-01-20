@@ -1,18 +1,31 @@
-## Getting Started
+## Passo a passo instalação
+ 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Criação dos class
+1 - 
+cd "C:\Users\Marques\Documents\projetos\Parte2RMI\src"
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+2 - 
+"C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\bin\javac.exe" -encoding ISO-8859-1 *.java
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Conexão com o servidor
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+3 - 
+"C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\bin\rmic.exe" Servidor
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+4 - 
+"C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\bin\java.exe" ^
+-Djava.security.policy="C:\Users\Marques\Documents\projetos\Parte2RMI\src\rmi.policy" ^
+Servidor
 
-## Dependency Management
+Conexão com os clientes(Em outro terminal)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+5 - 
+cd "C:\Users\Marques\Documents\projetos\Parte2RMI\src"
+
+6 - 
+"C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\bin\java.exe" ^
+-Djava.security.policy="C:\Users\Marques\Documents\projetos\Parte2RMI\src\rmi.policy" ^
+Cliente
